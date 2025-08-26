@@ -7,7 +7,6 @@ interface MovieListProps {
     title: string;
     movies: Movie[];
     isHorizontal?: boolean;
-    showFavorites?: boolean;
     favorites?: number[];
     onToggleFavorite?: (id: number) => void;
 }
@@ -16,7 +15,6 @@ export function MovieList({
     title,
     movies,
     isHorizontal = false,
-    showFavorites = false,
     favorites = [],
     onToggleFavorite,
 }: MovieListProps) {
